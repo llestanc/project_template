@@ -11,38 +11,45 @@ It will allow yourself, collaborators and/or supervisors to retrieve stuff and s
 
 ## Usage
 
-Read and update regularly the following files
+### Read and update regularly the following files
 
 1) [README.txt](https://github.com/llestanc/project_template/blob/master/README.txt)
 2) [REQUIREMENTS.txt](https://github.com/llestanc/project_template/blob/master/REQUIREMENTS.txt)
 
-Instructions are in subfolders
+### Recommandations
 
-### docs
+- BE SYSTEMATIC
+- NO SPACES and accents in file and folder names : Use _ instead (and not -)
+- NO CAPPITAL letters
+- Use explicit names and variables and values that make sense on their own
+
+### Instructions are in subfolders
+
+- docs
 
 Contains everything that is not data, scripts, figures, tables, material
 
 For more information see [docs/instructions_docs.txt](https://github.com/llestanc/project_template/blob/master/docs/instructions_docs.txt)
 
-### material
+- material
 
 Contains all your stimuli. But not material description or tasks designs. 
 
 For more information see [material/instructions_material.txt](https://github.com/llestanc/project_template/blob/master/material/instructions_material.txt)
 
-### raw_data
+- raw_data
 
 Contains raw data as originally generated
 
 For more information see [raw_data/instructions_raw_data.txt](https://github.com/llestanc/project_template/blob/master/raw_data/instructions_raw_data.txt)
 
-### results
+- results
 
 Contains everything obtained through manipulation or analyses of data contained in project_name/raw_data
 
 For more information see [results/instructions_results.txt](https://github.com/llestanc/project_template/blob/master/results/instructions_results.txt)
 
-### scripts
+- scripts
 
 Contains all the code written for the project
 
