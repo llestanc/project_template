@@ -1,4 +1,4 @@
-# This project was format according to https://github.com/llestanc/project_template
+# This project was formated according to https://github.com/llestanc/project_template
 
 # Project Title
 
