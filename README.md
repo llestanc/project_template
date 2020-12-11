@@ -5,9 +5,9 @@ It will allow yourself, collaborators and/or supervisors to retrieve stuff and s
 
 ## Install
 
-Click the green "Code" button on the top right of the page, and select "Download ZIP" in the drop down menu. 
-Unzip the project_template-master.zip downloaded file where you want to set up your new project on your computer. 
-Rename it with the name of your project and you're goog to go.
+- Click the green "Code" button on the top right of the page, and select "Download ZIP" in the drop down menu. 
+- Unzip the project_template-master.zip downloaded file where you want to set up your new project on your computer. 
+- Rename it with the name of your project and you're goog to go.
 
 ## Usage
 
