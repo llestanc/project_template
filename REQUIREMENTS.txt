@@ -1,0 +1,7 @@
+Make software dependencies and requirements explicit
+
+# for tasks
+% e.g. Prime 2.0 under windows 10.x
+
+# for scripts
+% e.g. for eeg analyses : eeglab version xx under matlabr2014b. Toolbox needed : xxx

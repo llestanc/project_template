@@ -1,0 +1,37 @@
+Contains everything obtained through manipulation or analyses of data contained in project_name/raw_data
+
+# a file containing participants unique id in the project and the correspondance with other id in the project
+
+# Formated data
+	Should be the same structure as project_name/raw_data
+	Make analysis-friendly data
+	Use 
+		- non-proprietary formats e.g. .cvs or normed format e.g. bids for mri/eeg
+		- self-explaining variable names e.g. first_name
+		- self-explaining cell content e.g. treated vs. untreated rather than 1 vs. 2
+		- replace missing data by NA
+
+	Make
+		- each column a variable
+		- each row a observation
+		- a column containing a unique identifier for every record e.g. subject number used across different data tables
+		- for imaging data name file after this unique identifier
+
+	Name file with useful metadata e.g. date, group, centre …
+
+	Record all steps of data modification. Try making different scripts (functions) for each different step of data preprocessing and a meta script calling the functions.
+
+# Preprocessed data
+	If you want to do some cleaning (e.g. remove outliers)
+	Name files with useful metadata (e.g. the standard deviation you used) or log of parameter used. 
+	Record all steps of data modification. Try making different scripts (functions) for each different step of data preprocessing and a meta script calling the functions.
+
+# Subsets of data
+	if you want to work on parts of your dataset and avoid loading all data e.g. subgroups.
+	Name files with useful metadata e.g. subgroup, time ...
+
+# statistics
+# data_behind_figures
+# figures
+# data_behind_tables
+# tables
