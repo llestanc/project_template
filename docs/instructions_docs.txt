@@ -13,6 +13,7 @@ Contains everything that is not data, scripts, figures, tables, material
 # Communications
 	Such as talks or posters about the project or its results
 	Keep track of version of the analyses used for each version in log_version.txt
+	Use a naming convention yyyy_mm_dd_type_place_title type is 'talk' or 'poster', place is the name conference or the lab
 
 # Manuscripts
 	Keep track of version of the analyses used for each version in log_version.txt
