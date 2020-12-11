@@ -63,7 +63,7 @@ Your can contribute to make it better by talking to me if you:
 - don't understand the instruction. It will help me make them clearer for everyone.
 - have suggestions. 
 
-# Credits
+## Credits
 
 This was based on
 - [Page Piccinini](https://pagepiccinini.com/r-course/lesson-1-r-basics/) who I worked with during my PhD.
