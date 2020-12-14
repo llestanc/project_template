@@ -1,0 +1,8 @@
+a file containing participants unique id in the project and the correspondance with other id in the project
+
+Columns : 
+id_unique, id_mri, id_behavioural, …
+
+Row : one per participants
+
+Use a free file format such as .csv (can be created from excel and read with excel)
