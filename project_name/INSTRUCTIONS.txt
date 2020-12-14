@@ -1,0 +1,203 @@
+# README.txt 
+
+Contains a short presentation of the project. 
+
+	## Title
+	## Collaborators
+	## What the project is about in short
+	## Getting stated section
+	## How to cite
+	## git-hub or Rxiv or any online/cloud repository used to store data, software etc
+
+_________________________________________________________________________________
+
+# REQUIREMENTS.txt 
+
+Contains software dependencies and requirements
+
+_________________________________________________________________________________
+
+# docs 
+
+Contains everything that is not data, scripts, figures, tables, material
+
+	## communications
+	Such as talks or posters about the project or its results.
+	Keep track of version of the analyses used for each version in log_version.txt
+	Use a naming convention yyyy_mm_dd_type_place_title type is 'talk' or 'poster', place is the name conference or the lab
+		### posters
+		### talks
+
+	## labnotebooks
+	Contains electronic lab notebooks
+
+	## litterature 
+	Contains relevant littérature for the project. 
+	NB : you can ask your reference manager (zotero, Mendeley) to watch this folder and add the pdfs automatically to your library. 
+
+	## manuscripts
+	Contains your manuscripts.
+	Keep track of version of the analyses used for each version of your manuscripts in log_version.txt
+		### journal_name
+		Name of folder after the journal you are writing for
+			#### preparation
+			Contains manuscripts your writing when working on a paper
+			#### submission
+			Contains manuscripts sent for submission
+			#### review
+			Contains manuscripts sent for review
+			#### publication
+			Contains manuscripts for publication. i.e. the final version of the paper
+
+
+	## project_documentation 
+		### official_documents
+		such as CPP, ANR project, …
+		### tasks_designs
+		should be the same structure as project_name/scripts/tasks
+		### material_description
+		should be the same structure as project_name/material
+		### data_dictionary
+		should be the same structure as project_name/raw_data 
+		Should contain a file containing participants unique id in the project and the correspondance with other id in the project
+
+	
+
+	## scripts_documentation
+	Contains the document for your code
+
+_________________________________________________________________________________
+
+# material
+
+Contains all your stimuli. 
+Such as: 
+audio files, 
+images, 
+text file containing instructions if loaded in your task scripts, 
+csv files containing trial-image association for example but IF used by you task script
+etc. 
+
+But not material description or tasks designs wich are in project_name/docs/project_documentation/material_description and project_name/docs/project_documentation/tasks_designs.
+
+_________________________________________________________________________________
+
+# raw_data
+
+Contains raw data as originally generated
+
+Use subdirectories containing relevant metadata (e.g. group, time, modality)
+
+Some data will be impractical to manage in this way. For example, you should avoid making local copies of large, stable databases. In that case, record the exact procedure used to obtain the raw data, as well as any other pertinent information, such as an official version number or the date of download.
+
+Back up this data in more than one location.
+
+This might be stored on the server. 
+
+_________________________________________________________________________________
+
+# results
+
+Contains everything obtained through manipulation or analyses of data contained in project_name/raw_data
+
+	## data_formatting
+	Contains formatted data
+	Should be the same structure as project_name/raw_data
+	Make analysis-friendly data
+	Use 
+		- non-proprietary formats e.g. .cvs or normed format e.g. bids for mri/eeg
+		- self-explaining variable names e.g. first_name
+		- self-explaining cell content e.g. treated vs. untreated rather than 1 vs. 2
+		- replace missing data by NA
+
+	Make
+		- each column a variable
+		- each row a observation
+		- a column containing a unique identifier for every record e.g. subject number used across different data tables
+		- for imaging data name file after this unique identifier
+
+	Name file with useful metadata e.g. date, group, centre …
+
+	Record all steps of data modification. Try making different scripts (functions) for each different step of data preprocessing and a meta script calling the functions.
+
+	## data_preprocessing
+	Contains preprocessed data.
+	If you want to do some cleaning (e.g. remove outliers)
+	Name files with useful metadata (e.g. the standard deviation you used) or log of parameter used. 
+	Record all steps of data modification. Try making different scripts (functions) for each different step of data preprocessing and a meta script calling the functions.
+
+	## data_subset
+	Contains subsets of data if you want to work on parts of your dataset and avoid loading all data e.g. subgroups.
+	Name files with useful metadata e.g. subgroup, time ...
+
+	## analyses
+	Contains statistics or analyses your performed on your data
+
+	## data_behind_figures
+	Contains the data used to generate your figure
+
+	## figures
+	Contains your figure
+	Should be the same structure as project_name/docs/manuscripts
+		### journal_name
+		Name of folder after the journal you are writing for
+			#### preparation
+			when working on a paper
+			#### submission
+			sent for submission
+			#### review
+			sent for review
+			#### publication
+			for publication. i.e. the final version of the paper
+
+	## data_behind_tables
+	Contains the data used to generate your tables
+
+	## tables
+	Contains your tables
+	Should be the same structure as project_name/docs/manuscripts
+		### journal_name
+		Name of folder after the journal you are writing for
+			#### preparation
+			when working on a paper
+			#### submission
+			sent for submission
+			#### review
+			sent for review
+			#### publication
+			for publication. i.e. the final version of the paper
+
+_________________________________________________________________________________
+
+# scripts 
+
+Contains all the code written for the project. 
+When coding, give functions and variables meaningful names, decompose programs into functions. Do not hard code parameters but put them into parameters instead. 
+
+
+	## tasks
+	Scripts for running your tasks
+	Should output to project_name/raw_data/
+	Outputs should contain relevant metadata such as inputs (subject id, data, hour,…)
+
+	## formatting
+	Scripts run to friendly-format data. (cf project_name/instructions_project_template.txt section #results##data_formatting)
+	Should output to project_name/results/data_formatting/
+
+	## preprocessing
+	Scripts to preprocess imaging data, clean outliers, …
+	Should output to project_name/results/data_preprocessed/whaterver_data/
+	Try to distinguish functions from meta scripts that contains all the analysis steps for the entire project from start to finish with parameters and data input/output commands. To do that, no parameter should be hard-coded in the script but stored and used as inputs. 
+	For each run of the analyses, save a log of the input used in an appropriate subfolder of project_name/results/data_preprocessing/whaterver_data/log_input.txt
+
+	## analyses
+	Scripts to run analyses. 
+	Should output to project_name/results/analyses/whatever_analyses/
+	Try to distinguish functions from meta scripts that contains all the analysis steps for the entire project from start to finish with parameters and data input/output commands. To do that, no parameter should be hard-coded in the script but stored and used as inputs. 
+	For each run of the analyses, save a log of the input used in an appropriate subfolder of project_name/results/analyses/whatever_analyses/log_input.txt
+
+	## figures_and_tables
+	Scripts to create figures and tables
+	Should output to project_name/results/tables/ and project_name/results/figures/
+	
+
