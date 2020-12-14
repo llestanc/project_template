@@ -1,7 +1,0 @@
-Example of an entry in this file : 
-
-% # yyyy_mm_dd_place % format you file name, place can be conference, journal etc
-% analyses version or path, 
-% figures path, 
-% tables path, 
-% scripts path
