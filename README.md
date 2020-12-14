@@ -12,7 +12,7 @@ It will allow yourself, collaborators and/or supervisors to retrieve stuff and s
 
 ## Usage
 
-### Structure overview (for more informations see instructions)
+### Structure overview (for more informations see [instructions](https://github.com/llestanc/project_template/blob/master/project_name/INSTRUCTIONS.txt))
 
 - docs
 
